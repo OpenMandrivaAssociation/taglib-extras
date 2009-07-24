@@ -41,7 +41,7 @@ Requires:    taglib-devel
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 %{cmake_kde4} -DWITH_KDE=1 ..
