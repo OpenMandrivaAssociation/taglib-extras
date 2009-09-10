@@ -1,6 +1,6 @@
 Summary:        Taglib support for other formats 
 Name:           taglib-extras
-Version:        0.1.6
+Version:        0.1.7
 Release:        %mkrel 1
 Group:          Sound 
 License:        LGPLv2
