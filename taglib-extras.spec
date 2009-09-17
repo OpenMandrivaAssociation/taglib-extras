@@ -18,7 +18,7 @@ audio formats not supported by taglib, including: asf, mp4v2, rmff, wav.
 %files
 %defattr(-,root,root,-)
 %doc COPYING.LGPL
-%{_libdir}/libtag-extras.so.0*
+%{_libdir}/libtag-extras.so.1*
 
 #--------------------------------------------------------------------
 
