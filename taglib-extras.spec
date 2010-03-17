@@ -1,7 +1,7 @@
 Summary:        Taglib support for other formats 
 Name:           taglib-extras
 Version:        1.0.1
-Release:        %mkrel 1
+Release:        %mkrel 2
 Group:          Sound 
 License:        LGPLv2
 URL:            http://websvn.kde.org/trunk/kdesupport/taglib-extras/
