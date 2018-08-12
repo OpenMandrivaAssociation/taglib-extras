@@ -1,15 +1,15 @@
 Summary:		Taglib support for other formats 
 Name:			taglib-extras
 Version:		1.0.1
-Release:		15
+Release:		16
 Group:			Sound 
 License:		LGPLv2
 URL:			http://websvn.kde.org/trunk/kdesupport/taglib-extras/
 Source0:		http://www.jefferai.com/taglib-extras/taglib-extras-%{version}.tar.gz 
 Source100:		taglib-extras.rpmlintrc
+Patch1:			taglib-1.10.patch
 
 BuildRequires:	taglib-devel
-BuildRequires:	kdelibs4-devel
 
 %description
 Taglib-extras delivers support for reading and editing the meta-data of 
@@ -41,9 +41,10 @@ Requires:	taglib-devel
 
 %prep
 %setup -q
+%apply_patches
 
 %build
-%{cmake_kde4} -DWITH_KDE=1 ..
+%{cmake} ..
 
 %make 
 
