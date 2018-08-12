@@ -10,6 +10,7 @@ Source100:		taglib-extras.rpmlintrc
 Patch1:			taglib-1.10.patch
 
 BuildRequires:	taglib-devel
+BuildRequires:	cmake
 
 %description
 Taglib-extras delivers support for reading and editing the meta-data of 
