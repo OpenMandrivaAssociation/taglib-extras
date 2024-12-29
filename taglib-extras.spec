@@ -10,8 +10,9 @@ Source100:		taglib-extras.rpmlintrc
 #Patch1:			taglib-1.10.patch
 Patch2:     https://aur.archlinux.org/cgit/aur.git/plain/taglib-2.0.diff
 
-BuildRequires:	taglib-devel
 BuildRequires:	cmake
+BuildRequires:	pkgconfig(taglib)
+BuildRequires:  pkgconfig(zlib)
 
 %description
 Taglib-extras delivers support for reading and editing the meta-data of 
@@ -28,7 +29,7 @@ Summary:	Development files for %{name}
 Group:		Development/C++ 
 Requires:	%{name} = %{version}-%{release}
 Requires:	pkgconfig
-Requires:	taglib-devel
+Requires:	pkgconfig(taglib)
 
 %description devel
 %{summary}.
@@ -42,14 +43,12 @@ Requires:	taglib-devel
 #--------------------------------------------------------------------
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 
 %build
 %{cmake} ..
 
-%make 
+%make_build
 
 %install
-make -C build DESTDIR=%buildroot install
-
+%make_install -C build
