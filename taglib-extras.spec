@@ -7,7 +7,7 @@ License:		LGPLv2
 URL:			https://websvn.kde.org/trunk/kdesupport/taglib-extras/
 Source0:		http://www.jefferai.com/taglib-extras/taglib-extras-%{version}.tar.gz 
 Source100:		taglib-extras.rpmlintrc
-Patch1:			taglib-1.10.patch
+#Patch1:			taglib-1.10.patch
 Patch2:     https://aur.archlinux.org/cgit/aur.git/plain/taglib-2.0.diff
 
 BuildRequires:	taglib-devel
